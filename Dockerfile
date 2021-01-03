@@ -18,7 +18,7 @@ RUN apk add --no-cache git unzip  \
 
 RUN apk add --no-cache \
         freetype-dev \
-        ssh-client \
+        openssh-client \
         libjpeg-turbo-dev \
         libxml2-dev \
         autoconf \
