@@ -1,6 +1,6 @@
 FROM php:7.4-fpm-alpine
 
-MAINTAINER Dmitry Boyko <dmitry@thebodva.com>
+#MAINTAINER Dmitry Boyko <dmitry@thebodva.com>
 
 RUN apk add --update bash && rm -rf /var/cache/apk/*
 
@@ -18,6 +18,7 @@ RUN apk add --no-cache git unzip  \
 
 RUN apk add --no-cache \
         freetype-dev \
+        ssh-client \
         libjpeg-turbo-dev \
         libxml2-dev \
         autoconf \
